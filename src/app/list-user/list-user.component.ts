@@ -16,4 +16,10 @@ export class ListUserComponent implements OnInit {
       this.userData=allData;
     } );
   }
-}
+  deleteUser( user_id: any ) {
+    this.user.deleteUser( user_id ).subscribe( ( result )=>{
+      //console.log( result );
+      this.ngOnInit();
+    }); 
+  }
+} 

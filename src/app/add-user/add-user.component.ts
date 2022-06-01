@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormControl } from '@angular/forms';
 import { UserService } from 'src/app/user.service';
+import { __values } from 'tslib';
 
 @Component({
   selector: 'app-add-user',
@@ -16,14 +17,18 @@ export class AddUserComponent implements OnInit {
     email: new FormControl( '' ),
   } );
 
+message: boolean=false;
 ngOnInit(): void {
   }
 SaveData() {
   //console.log( this.addUser.value );
-  this.user.saveUserData(this.addUser.value).subscribe((result)=>{
-    console.log(result);
-
+  this.user.saveUserData(this.addUser.value).subscribe( (result) => {
+  // console.log(result);
+  this.message=true;
+  this.addUser.reset( {} );
   } );
 }
-
+removeMessage() {
+  this.message=false;
+  }
 }

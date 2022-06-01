@@ -14,4 +14,7 @@ export class UserService {
     console.log(data);
     return this.http.post(this.url, data);
   }
+  deleteUser (id: any) {
+    return this.http.delete( `${this.url}/${id}`);
+  }
 }

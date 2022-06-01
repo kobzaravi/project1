@@ -9,7 +9,8 @@ import { EditUserComponent } from './edit-user/edit-user.component';
 import { ListUserComponent } from './list-user/list-user.component';
 import { LoginUserComponent } from './login-user/login-user.component';
 import { RegistrationUserComponent } from './registration-user/registration-user.component';
-import { ReactiveFormsModule } from '@angular/forms'
+import { ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http'
 
 const routes: Routes = [
   {path: '', component: AddUserComponent},
@@ -33,6 +34,7 @@ const routes: Routes = [
     AppRoutingModule,
     NgbModule,
     ReactiveFormsModule,
+    HttpClientModule,
     RouterModule.forRoot(routes),
   ],
   providers: [],

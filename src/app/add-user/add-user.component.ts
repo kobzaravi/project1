@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { FormGroup, FormControl } from '@angular/forms';
+import { UserService } from 'src/app/user.service';
 
 @Component({
   selector: 'app-add-user',
@@ -7,9 +9,21 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AddUserComponent implements OnInit {
 
-  constructor() { }
+  constructor(private user: UserService) { }
+  addUser=new FormGroup( {
+    id: new FormControl( ''),
+    name: new FormControl( '' ),
+    email: new FormControl( '' ),
+  } );
 
-  ngOnInit(): void {
+ngOnInit(): void {
   }
+SaveData() {
+  //console.log( this.addUser.value );
+  this.user.saveUserData(this.addUser.value).subscribe((result)=>{
+    console.log(result);
+
+  } );
+}
 
 }

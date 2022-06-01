@@ -1,14 +1,19 @@
 import { Component, OnInit } from '@angular/core';
+import { UserService } from 'src/app/user.service';
 
 @Component({
   selector: 'app-list-user',
-  template: `<h3>List User</h3>`
+  templateUrl: './list-user.component.html',
+  styleUrls: ['./list-user.component.scss']
 })
 export class ListUserComponent implements OnInit {
 
-  constructor() { }
-
+  constructor(private user : UserService) { }
+  userData: any=[];
   ngOnInit(): void {
+    this.user.getAllUser().subscribe( ( allData ) => {
+      console.log( allData );
+      this.userData=allData;
+    } );
   }
-
 }

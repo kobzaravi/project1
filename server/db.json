@@ -1,16 +1,6 @@
 {
   "users": [
     {
-      "id": 10,
-      "name": "bip",
-      "email": "bip@ho.ua"
-    },
-    {
-      "id": 11,
-      "name": "button",
-      "email": "button@email.com"
-    },
-    {
       "id": 14,
       "name": "Alex",
       "email": "Alex@gmail.com"
@@ -34,11 +24,6 @@
       "id": 18,
       "name": "heq",
       "email": "heq@email.com"
-    },
-    {
-      "id": 19,
-      "name": "hello",
-      "email": "hello@email.com"
     },
     {
       "id": 20,
@@ -79,6 +64,16 @@
       "id": 27,
       "name": "hello",
       "email": "hello@gmail.com"
+    },
+    {
+      "id": 28,
+      "name": "Oleksandr Kobzar",
+      "email": "kobzaravi@gmail.com"
+    },
+    {
+      "id": 29,
+      "name": "Example",
+      "email": "example@gmail.com"
     }
   ]
 }

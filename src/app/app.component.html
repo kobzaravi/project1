@@ -1,11 +1,16 @@
   <div class="container">
-    <img src="./favicon.ico"   width="15%" height="auto" alt="">
+    <td><img src="./favicon.ico"   width="100%" height="auto" alt=""></td>
+    <td><h3><marquee behavior="scroll" direction="left">-It's  simple form for registration users!-
+      /-Form used JSON server-/-Created docker image and deploy on Google Cloud.-
+    </marquee></h3>
+    </td>
+    
     <nav>  
     <button routerLink="/" routerLinkActive="active one" [routerLinkActiveOptions]="{exact: true}">Add User</button>
     <button routerLink="/list-user" routerLinkActive="active two">List User</button>
-    <button routerLink="/edit-user" routerLinkActive="active three">Edit User</button>
+    <!-- <button routerLink="/edit-user" routerLinkActive="active three">Edit User</button>
     <button routerLink="/login-user" routerLinkActive="active four">Login User</button>
-    <button routerLink="/registration-user" routerLinkActive="active registration-user">Registr User</button>
+    <button routerLink="/registration-user" routerLinkActive="active registration-user">Registr User</button> -->
   </nav>  
     <router-outlet></router-outlet>
     </div> 

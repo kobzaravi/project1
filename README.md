@@ -1,4 +1,6 @@
-# Project1
+# Project1 - created simple form for add new user im data base.
+Data base on json-server
+Created Docker images and lanch on local host
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.3.
 
